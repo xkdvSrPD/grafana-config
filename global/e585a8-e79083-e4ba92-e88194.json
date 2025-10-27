@@ -765,8 +765,8 @@
       "list": [
         {
           "current": {
-            "text": "15s",
-            "value": "15s"
+            "text": "30s",
+            "value": "30s"
           },
           "description": "",
           "label": "平均值",
@@ -774,8 +774,8 @@
           "options": [
             {
               "selected": true,
-              "text": "15s",
-              "value": "15s"
+              "text": "30s",
+              "value": "30s"
             },
             {
               "selected": false,
@@ -829,10 +829,10 @@
         {
           "current": {
             "text": [
-              "TYO.Pro.Shinagawa"
+              "HKG.AS3.T1.WEE"
             ],
             "value": [
-              "TYO.Pro.Shinagawa"
+              "HKG.AS3.T1.WEE"
             ]
           },
           "definition": "label_values(probe_success{project=\"GLOBAL-CONNECTION\", host=~\"$host\"},product)",
@@ -852,9 +852,7 @@
         },
         {
           "current": {
-            "text": [
-              "All"
-            ],
+            "text": "All",
             "value": [
               "$__all"
             ]
@@ -896,9 +894,7 @@
         },
         {
           "current": {
-            "text": [
-              "All"
-            ],
+            "text": "All",
             "value": [
               "$__all"
             ]
