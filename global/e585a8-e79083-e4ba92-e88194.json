@@ -720,7 +720,9 @@
             "calcs": [
               "max",
               "min",
-              "mean"
+              "mean",
+              "median",
+              "p95"
             ],
             "displayMode": "table",
             "placement": "right",
@@ -917,7 +919,7 @@
       ]
     },
     "time": {
-      "from": "now-12h",
+      "from": "now-7d",
       "to": "now"
     },
     "timepicker": {
