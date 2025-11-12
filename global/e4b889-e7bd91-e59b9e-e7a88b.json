@@ -113,11 +113,14 @@
             "calcs": [
               "max",
               "min",
-              "mean"
+              "mean",
+              "p95"
             ],
             "displayMode": "table",
             "placement": "right",
-            "showLegend": true
+            "showLegend": true,
+            "sortBy": "95th %",
+            "sortDesc": false
           },
           "tooltip": {
             "hideZeros": false,
@@ -894,7 +897,7 @@
       ]
     },
     "time": {
-      "from": "now-1h",
+      "from": "now-5m",
       "to": "now"
     },
     "timepicker": {
