@@ -2845,8 +2845,7 @@
               "lineWidth": 1,
               "pointSize": 5,
               "scaleDistribution": {
-                "log": 2,
-                "type": "log"
+                "type": "linear"
               },
               "showPoints": "never",
               "showValues": false,
@@ -4798,8 +4797,8 @@
         },
         {
           "current": {
-            "text": "YT.NET-HK-IX",
-            "value": "YT.NET-HK-IX"
+            "text": "DMIT-HK-T1",
+            "value": "DMIT-HK-T1"
           },
           "datasource": {
             "type": "prometheus",
