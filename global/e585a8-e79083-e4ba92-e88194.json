@@ -460,7 +460,7 @@
           ]
         },
         "gridPos": {
-          "h": 18,
+          "h": 16,
           "w": 24,
           "x": 0,
           "y": 0
@@ -476,7 +476,7 @@
             }
           ]
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -711,7 +711,7 @@
           "h": 19,
           "w": 24,
           "x": 0,
-          "y": 18
+          "y": 16
         },
         "id": 24,
         "options": {
@@ -736,7 +736,7 @@
             "sort": "asc"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -876,8 +876,40 @@
         },
         {
           "current": {
-            "text": "All",
-            "value": "$__all"
+            "text": [
+              "AU",
+              "BE",
+              "BR",
+              "CA",
+              "CH",
+              "DE",
+              "FR",
+              "GB",
+              "HK",
+              "IN",
+              "JP",
+              "NZ",
+              "RU",
+              "SG",
+              "US"
+            ],
+            "value": [
+              "AU",
+              "BE",
+              "BR",
+              "CA",
+              "CH",
+              "DE",
+              "FR",
+              "GB",
+              "HK",
+              "IN",
+              "JP",
+              "NZ",
+              "RU",
+              "SG",
+              "US"
+            ]
           },
           "definition": "label_values(probe_success{project=\"GLOBAL-CONNECTION\"},to_region)",
           "includeAll": true,
@@ -919,7 +951,7 @@
       ]
     },
     "time": {
-      "from": "now-7d",
+      "from": "now-6h",
       "to": "now"
     },
     "timepicker": {
