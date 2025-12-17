@@ -660,7 +660,7 @@
               "barAlignment": 0,
               "barWidthFactor": 0.6,
               "drawStyle": "line",
-              "fillOpacity": 0,
+              "fillOpacity": 1,
               "gradientMode": "none",
               "hideFrom": {
                 "legend": false,
@@ -725,7 +725,7 @@
               "p95"
             ],
             "displayMode": "table",
-            "placement": "right",
+            "placement": "bottom",
             "showLegend": true,
             "sortBy": "Mean",
             "sortDesc": false
@@ -746,6 +746,123 @@
             "editorMode": "code",
             "exemplar": false,
             "expr": "avg_over_time(probe_duration_seconds{module=\"tcp_ping\", project=\"GLOBAL-CONNECTION\", host=~\"$host\", product=~\"$product\", region=~\"$region\", to_region=~\"$to_region\", name=~\"$name\"}[$step])",
+            "format": "time_series",
+            "instant": false,
+            "interval": "",
+            "intervalFactor": 1,
+            "legendFormat": "{{region}} -\u003e {{to_region}} {{name}} / {{host}}  {{product}}",
+            "range": true,
+            "refId": "A"
+          }
+        ],
+        "title": "",
+        "type": "timeseries"
+      },
+      {
+        "datasource": {
+          "type": "prometheus",
+          "uid": "aelkijwrrw6iob"
+        },
+        "fieldConfig": {
+          "defaults": {
+            "color": {
+              "mode": "palette-classic"
+            },
+            "custom": {
+              "axisBorderShow": false,
+              "axisCenteredZero": false,
+              "axisColorMode": "text",
+              "axisLabel": "",
+              "axisPlacement": "auto",
+              "barAlignment": 0,
+              "barWidthFactor": 0.6,
+              "drawStyle": "line",
+              "fillOpacity": 1,
+              "gradientMode": "none",
+              "hideFrom": {
+                "legend": false,
+                "tooltip": false,
+                "viz": false
+              },
+              "insertNulls": false,
+              "lineInterpolation": "smooth",
+              "lineStyle": {
+                "fill": "solid"
+              },
+              "lineWidth": 1,
+              "pointSize": 2,
+              "scaleDistribution": {
+                "log": 2,
+                "type": "log"
+              },
+              "showPoints": "always",
+              "showValues": false,
+              "spanNulls": false,
+              "stacking": {
+                "group": "A",
+                "mode": "none"
+              },
+              "thresholdsStyle": {
+                "mode": "off"
+              }
+            },
+            "mappings": [],
+            "thresholds": {
+              "mode": "absolute",
+              "steps": [
+                {
+                  "color": "green",
+                  "value": 0
+                },
+                {
+                  "color": "red",
+                  "value": 80
+                }
+              ]
+            },
+            "unit": "s"
+          },
+          "overrides": []
+        },
+        "gridPos": {
+          "h": 19,
+          "w": 24,
+          "x": 0,
+          "y": 35
+        },
+        "id": 2415,
+        "options": {
+          "alertThreshold": false,
+          "legend": {
+            "calcs": [
+              "max",
+              "min",
+              "mean",
+              "median",
+              "p95"
+            ],
+            "displayMode": "table",
+            "placement": "bottom",
+            "showLegend": true,
+            "sortBy": "Mean",
+            "sortDesc": false
+          },
+          "tooltip": {
+            "hideZeros": false,
+            "mode": "multi",
+            "sort": "asc"
+          }
+        },
+        "pluginVersion": "12.3.0",
+        "targets": [
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "aelkijwrrw6iob"
+            },
+            "editorMode": "code",
+            "exemplar": false,
+            "expr": "avg_over_time(probe_duration_seconds{project=\"VPN_CONNECTION\", host=~\"$host\", product=~\"$product\"}[$step])\r\n-\r\navg_over_time(probe_dns_lookup_time_seconds{project=\"VPN_CONNECTION\", host=~\"$host\", product=~\"$product\"}[$step])",
             "format": "time_series",
             "instant": false,
             "interval": "",
