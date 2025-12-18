@@ -322,7 +322,7 @@
             "text": "All",
             "value": "$__all"
           },
-          "definition": "label_values(probe_success{project=\"GLOBAL-CONNECTION\"},host)",
+          "definition": "label_values(probe_success,host)",
           "includeAll": true,
           "label": "HOST",
           "multi": true,
@@ -330,7 +330,7 @@
           "options": [],
           "query": {
             "qryType": 1,
-            "query": "label_values(probe_success{project=\"GLOBAL-CONNECTION\"},host)",
+            "query": "label_values(probe_success,host)",
             "refId": "PrometheusVariableQueryEditor-VariableQuery"
           },
           "refresh": 1,
@@ -340,13 +340,13 @@
         {
           "current": {
             "text": [
-              "HKG.AS3.T1.WEE"
+              "YT-NET-NAT-HK"
             ],
             "value": [
-              "HKG.AS3.T1.WEE"
+              "YT-NET-NAT-HK"
             ]
           },
-          "definition": "label_values(probe_success{project=\"GLOBAL-CONNECTION\", host=~\"$host\"},product)",
+          "definition": "label_values(probe_success{host=~\"$host\"},product)",
           "includeAll": true,
           "label": "PRODUCT",
           "multi": true,
@@ -354,7 +354,7 @@
           "options": [],
           "query": {
             "qryType": 1,
-            "query": "label_values(probe_success{project=\"GLOBAL-CONNECTION\", host=~\"$host\"},product)",
+            "query": "label_values(probe_success{host=~\"$host\"},product)",
             "refId": "PrometheusVariableQueryEditor-VariableQuery"
           },
           "refresh": 1,
