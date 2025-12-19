@@ -850,7 +850,6 @@
           }
         ],
         "title": "出入流量统计 (大致)",
-        "transparent": true,
         "type": "timeseries"
       },
       {
@@ -1005,7 +1004,6 @@
           }
         ],
         "title": "^ ^",
-        "transparent": true,
         "type": "stat"
       },
       {
@@ -1156,7 +1154,6 @@
           }
         ],
         "title": "5分钟系统负载 (综合)",
-        "transparent": true,
         "type": "timeseries"
       },
       {
@@ -1369,7 +1366,6 @@
           }
         ],
         "title": "",
-        "transparent": true,
         "type": "histogram"
       },
       {
@@ -1406,8 +1402,7 @@
               "lineWidth": 0,
               "pointSize": 5,
               "scaleDistribution": {
-                "log": 2,
-                "type": "log"
+                "type": "linear"
               },
               "showPoints": "never",
               "showValues": false,
@@ -1602,7 +1597,6 @@
           }
         ],
         "title": "传输速率 (综合)",
-        "transparent": true,
         "type": "timeseries"
       },
       {
@@ -1731,7 +1725,6 @@
           }
         ],
         "title": "总连接数 \u0026 TIME_WAIT数量",
-        "transparent": true,
         "type": "timeseries"
       },
       {
@@ -1895,7 +1888,6 @@
           }
         ],
         "title": "",
-        "transparent": true,
         "type": "stat"
       },
       {
@@ -3090,7 +3082,7 @@
             "sort": "desc"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -3383,7 +3375,7 @@
           "frameIndex": 2,
           "showHeader": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -3624,7 +3616,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -3756,7 +3748,7 @@
           "textMode": "value_and_name",
           "wideLayout": true
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -4156,7 +4148,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -4739,7 +4731,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.0",
         "targets": [
           {
             "datasource": {
@@ -4797,8 +4789,8 @@
         },
         {
           "current": {
-            "text": "DMIT-HK-T1",
-            "value": "DMIT-HK-T1"
+            "text": "Halo-SZ-IX",
+            "value": "Halo-SZ-IX"
           },
           "datasource": {
             "type": "prometheus",
@@ -4877,7 +4869,7 @@
       ]
     },
     "time": {
-      "from": "now-1h",
+      "from": "now-3h",
       "to": "now"
     },
     "timepicker": {
