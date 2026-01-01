@@ -128,7 +128,7 @@
             "sort": "asc"
           }
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.1",
         "targets": [
           {
             "datasource": {
@@ -593,7 +593,7 @@
             }
           ]
         },
-        "pluginVersion": "12.2.0",
+        "pluginVersion": "12.3.1",
         "targets": [
           {
             "datasource": {
@@ -831,9 +831,11 @@
         },
         {
           "current": {
-            "text": "All",
+            "text": [
+              "The Amsterdam Plan"
+            ],
             "value": [
-              "$__all"
+              "The Amsterdam Plan"
             ]
           },
           "definition": "label_values(probe_success{module=~\"tcp_ping\", project=~\"三网延迟\", name=~\"$name\", region=~\"$region\", host=~\"$host\"},product)",
@@ -897,7 +899,7 @@
       ]
     },
     "time": {
-      "from": "now-5m",
+      "from": "now-12h",
       "to": "now"
     },
     "timepicker": {
