@@ -832,10 +832,10 @@
         {
           "current": {
             "text": [
-              "The Amsterdam Plan"
+              "NODESEEK-MEGABOX-PRO"
             ],
             "value": [
-              "The Amsterdam Plan"
+              "NODESEEK-MEGABOX-PRO"
             ]
           },
           "definition": "label_values(probe_success{module=~\"tcp_ping\", project=~\"三网延迟\", name=~\"$name\", region=~\"$region\", host=~\"$host\"},product)",
