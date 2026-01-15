@@ -97,10 +97,35 @@
             },
             "unit": "s"
           },
-          "overrides": []
+          "overrides": [
+            {
+              "__systemRef": "hideSeriesFrom",
+              "matcher": {
+                "id": "byNames",
+                "options": {
+                  "mode": "exclude",
+                  "names": [
+                    "HK -\u003e SG 新加坡 / DMIT  HKG.AS3.T1.WEE"
+                  ],
+                  "prefix": "All except:",
+                  "readOnly": true
+                }
+              },
+              "properties": [
+                {
+                  "id": "custom.hideFrom",
+                  "value": {
+                    "legend": false,
+                    "tooltip": true,
+                    "viz": true
+                  }
+                }
+              ]
+            }
+          ]
         },
         "gridPos": {
-          "h": 19,
+          "h": 20,
           "w": 24,
           "x": 0,
           "y": 0
@@ -128,7 +153,7 @@
             "sort": "asc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.1",
         "targets": [
           {
             "datasource": {
@@ -214,13 +239,38 @@
             },
             "unit": "s"
           },
-          "overrides": []
+          "overrides": [
+            {
+              "__systemRef": "hideSeriesFrom",
+              "matcher": {
+                "id": "byNames",
+                "options": {
+                  "mode": "exclude",
+                  "names": [
+                    "HK -\u003e  V2EX / DMIT  HKG.AS3.T1.WEE"
+                  ],
+                  "prefix": "All except:",
+                  "readOnly": true
+                }
+              },
+              "properties": [
+                {
+                  "id": "custom.hideFrom",
+                  "value": {
+                    "legend": false,
+                    "tooltip": true,
+                    "viz": true
+                  }
+                }
+              ]
+            }
+          ]
         },
         "gridPos": {
           "h": 19,
           "w": 24,
           "x": 0,
-          "y": 19
+          "y": 20
         },
         "id": 2415,
         "options": {
@@ -245,7 +295,7 @@
             "sort": "asc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.1",
         "targets": [
           {
             "datasource": {
@@ -340,10 +390,10 @@
         {
           "current": {
             "text": [
-              "YT-NET-NAT-HK"
+              "HKG.AS3.T1.WEE"
             ],
             "value": [
-              "YT-NET-NAT-HK"
+              "HKG.AS3.T1.WEE"
             ]
           },
           "definition": "label_values(probe_success{host=~\"$host\"},product)",
@@ -460,7 +510,7 @@
       ]
     },
     "time": {
-      "from": "now-6h",
+      "from": "now-7d",
       "to": "now"
     },
     "timepicker": {
