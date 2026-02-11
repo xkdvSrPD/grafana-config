@@ -439,7 +439,7 @@
             }
           ]
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -805,7 +805,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -955,7 +955,7 @@
           "textMode": "value_and_name",
           "wideLayout": true
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -1124,7 +1124,7 @@
             "sort": "desc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -1349,7 +1349,7 @@
             "sort": "desc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -1580,7 +1580,7 @@
             "sort": "desc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -1695,7 +1695,7 @@
             "sort": "desc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -1838,7 +1838,7 @@
           "textMode": "value_and_name",
           "wideLayout": true
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -2005,7 +2005,7 @@
           "textMode": "value_and_name",
           "wideLayout": true
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -2261,7 +2261,7 @@
             "sort": "desc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -2455,7 +2455,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -2730,7 +2730,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -3081,7 +3081,7 @@
             "sort": "desc"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -3363,7 +3363,7 @@
           ]
         },
         "gridPos": {
-          "h": 4,
+          "h": 7,
           "w": 8,
           "x": 8,
           "y": 29
@@ -3374,7 +3374,7 @@
           "frameIndex": 2,
           "showHeader": true
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -3615,7 +3615,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -3648,162 +3648,6 @@
         ],
         "title": "硬盘读写速率",
         "type": "timeseries"
-      },
-      {
-        "datasource": {
-          "type": "prometheus",
-          "uid": "aelkijwrrw6iob"
-        },
-        "fieldConfig": {
-          "defaults": {
-            "color": {
-              "fixedColor": "#307b71",
-              "mode": "fixed"
-            },
-            "mappings": [],
-            "thresholds": {
-              "mode": "absolute",
-              "steps": [
-                {
-                  "color": "green",
-                  "value": 0
-                },
-                {
-                  "color": "red",
-                  "value": 80
-                }
-              ]
-            },
-            "unit": "none"
-          },
-          "overrides": [
-            {
-              "matcher": {
-                "id": "byName",
-                "options": "⏱️ 在线时长"
-              },
-              "properties": [
-                {
-                  "id": "unit",
-                  "value": "s"
-                },
-                {
-                  "id": "decimals",
-                  "value": 0
-                }
-              ]
-            },
-            {
-              "matcher": {
-                "id": "byName",
-                "options": "🫙 内存容量"
-              },
-              "properties": [
-                {
-                  "id": "unit",
-                  "value": "bytes"
-                }
-              ]
-            },
-            {
-              "matcher": {
-                "id": "byName",
-                "options": "💾 硬盘容量"
-              },
-              "properties": [
-                {
-                  "id": "unit",
-                  "value": "bytes"
-                }
-              ]
-            }
-          ]
-        },
-        "gridPos": {
-          "h": 3,
-          "w": 8,
-          "x": 8,
-          "y": 33
-        },
-        "id": 331,
-        "options": {
-          "colorMode": "background",
-          "graphMode": "none",
-          "justifyMode": "auto",
-          "orientation": "auto",
-          "percentChangeColorMode": "standard",
-          "reduceOptions": {
-            "calcs": [
-              "lastNotNull"
-            ],
-            "fields": "",
-            "values": false
-          },
-          "showPercentChange": false,
-          "text": {
-            "titleSize": 10,
-            "valueSize": 20
-          },
-          "textMode": "value_and_name",
-          "wideLayout": true
-        },
-        "pluginVersion": "12.3.0",
-        "targets": [
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "aelkijwrrw6iob"
-            },
-            "editorMode": "code",
-            "expr": "avg(time() - node_boot_time_seconds{job=\"$job\", instance=\"$node\"})",
-            "instant": false,
-            "legendFormat": "⏱️ 在线时长",
-            "range": true,
-            "refId": "A"
-          },
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "aelkijwrrw6iob"
-            },
-            "editorMode": "code",
-            "expr": "count(node_cpu_seconds_total{job=\"$job\", instance=\"$node\", mode='system'})",
-            "hide": false,
-            "instant": false,
-            "legendFormat": "💎 核心数量",
-            "range": true,
-            "refId": "B"
-          },
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "aelkijwrrw6iob"
-            },
-            "editorMode": "code",
-            "expr": "max(node_filesystem_size_bytes{job=\"$job\", instance=\"$node\"})",
-            "hide": false,
-            "instant": false,
-            "legendFormat": "💾 硬盘容量",
-            "range": true,
-            "refId": "C"
-          },
-          {
-            "datasource": {
-              "type": "prometheus",
-              "uid": "aelkijwrrw6iob"
-            },
-            "editorMode": "code",
-            "expr": "sum(node_memory_MemTotal_bytes{job=\"$job\", instance=\"$node\"})",
-            "hide": false,
-            "instant": false,
-            "legendFormat": "🫙 内存容量",
-            "range": true,
-            "refId": "D"
-          }
-        ],
-        "title": "",
-        "transparent": true,
-        "type": "stat"
       },
       {
         "datasource": {
@@ -4147,7 +3991,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -4730,7 +4574,7 @@
             "sort": "none"
           }
         },
-        "pluginVersion": "12.3.0",
+        "pluginVersion": "12.3.2+security-01",
         "targets": [
           {
             "datasource": {
@@ -4788,8 +4632,8 @@
         },
         {
           "current": {
-            "text": "Halo-SZ-IX",
-            "value": "Halo-SZ-IX"
+            "text": "BWH-MegaBox Pro",
+            "value": "BWH-MegaBox Pro"
           },
           "datasource": {
             "type": "prometheus",
