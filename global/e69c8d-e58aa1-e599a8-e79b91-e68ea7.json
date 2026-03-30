@@ -1718,6 +1718,18 @@
             "legendFormat": "TIME_WAIT",
             "range": true,
             "refId": "B"
+          },
+          {
+            "datasource": {
+              "type": "prometheus",
+              "uid": "aelkijwrrw6iob"
+            },
+            "editorMode": "code",
+            "expr": "node_sockstat_TCP_tw{job=\"$job\"}",
+            "instant": false,
+            "legendFormat": "{{instance}}",
+            "range": true,
+            "refId": "C"
           }
         ],
         "title": "总连接数 \u0026 TIME_WAIT数量",
