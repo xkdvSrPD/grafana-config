@@ -1725,7 +1725,7 @@
               "uid": "aelkijwrrw6iob"
             },
             "editorMode": "code",
-            "expr": "node_sockstat_TCP_tw{job=\"$job\"}",
+            "expr": "node_netstat_Tcp_CurrEstab{job=\"$job\"}",
             "instant": false,
             "legendFormat": "{{instance}}",
             "range": true,
